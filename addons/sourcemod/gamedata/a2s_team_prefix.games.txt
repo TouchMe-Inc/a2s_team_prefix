@@ -1,0 +1,37 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Addresses"
+		{
+			"NET_SendPacket"
+			{
+				"windows"
+				{
+					"signature"		"NET_SendPacket"
+				}
+				"linux"
+				{
+					"signature" 	"NET_SendPacket"
+				}
+			}
+		}
+		"Signatures"
+		{
+			"NET_SendPacket"
+			{
+				"library"	"engine"
+				"windows"	"\x55\x8B\xEC\xB8\x64\x20\x00\x00\xE8\x23\x23\x14\x00\xA1\x98\xDD"
+				"linux"	"\x55\x89\xE5\x57\x56\x53\x81\xEC\x6C\x25\x00\x00\x8B\x45\x10\x8B"
+			}
+		}
+		"Offsets"
+		{
+			"WindowsOrLinux"
+			{
+					"windows" "1"
+					"linux"   "2"
+			}
+		}
+	}
+}
